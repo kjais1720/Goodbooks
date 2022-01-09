@@ -90,7 +90,7 @@ export default function App() {
     setGenre(genre);
   }
 
-  function getClassByRating(rating) {
+  let getClassByRating = rating => {
     if (rating > 7.5) {
       return "green";
     } else if (rating > 6 && rating < 7.5) {
@@ -99,6 +99,7 @@ export default function App() {
       return "red";
     }
   }
+  
   return (
     <div className="App">
       <main id="main">
